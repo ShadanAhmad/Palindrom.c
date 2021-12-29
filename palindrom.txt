@@ -1,0 +1,21 @@
+bool isPalindrome(int x){
+    long int r=0,s,re;
+    s=x;
+    if(s<0){
+        return(false);
+    }
+   // scanf("%d",&x);
+    do{
+        re=x%10;
+        r=r*10+re;
+        x=x/10;
+        
+    }while(x!=0);
+    if(r==s){
+          return(true);
+
+    }else{
+        return(false);
+    }
+return 0;
+}
